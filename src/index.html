@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="/" />
+    <title>Webshop Image Viewer</title>
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="icon" sizes="192x192" href="/favicon.ico" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+
+<body>
+    <br>
+    <br>
+    <!-- Plugin wrapper (ID important!) -->
+    <!-- Class required - horizontal / vertical -->
+    <div class="container vertical" id="image-viewer">
+        <div class="thumbnail-strip">
+            <a href="#" id="prev-btn">
+                <i class="fa fa-2x"></i>
+            </a>
+
+            <ul class="thumbnail-list">
+                <li class="thumbnail thumb active" data-thumb-id="1">
+                    <img src="/img/img1-thumb.jpg" alt="Image 1 Thumbnail">
+                </li>
+                <li class="thumbnail thumb" data-thumb-id="2">
+                    <img src="/img/img2-thumb.jpg" alt="Image 2 Thumbnail">
+                </li>
+                <li class="thumbnail thumb" data-thumb-id="3">
+                    <img src="/img/img3-thumb.jpg" alt="Image 3 Thumbnail">
+                </li>
+                <li class="thumbnail thumb" data-thumb-id="4">
+                    <img src="/img/img4-thumb.jpg" alt="Image 4 Thumbnail">
+                </li>
+                <li class="thumbnail thumb" data-thumb-id="5">
+                    <img src="/img/img5-thumb.jpg" alt="Image 5 Thumbnail">
+                </li>
+                <li class="thumbnail thumb" data-thumb-id="6">
+                    <img src="/img/img6-thumb.jpg" alt="Image 6 Thumbnail">
+                </li>
+            </ul>
+
+            <a href="#" id="next-btn">
+                <i class="fa fa-2x"></i>
+            </a>
+        </div>
+        <div class="current-image">
+            <img src="/img/img1.jpg" class="img-responsive" alt="Image preview">
+        </div>
+    </div>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="/app.js" charset="utf-8"></script>
+</body>
+
+</html>
